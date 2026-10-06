@@ -55,6 +55,8 @@ if (CONFIG.CONTACT_PHONE) {
   const tel = $("#phoneLink");
   tel.href = "tel:" + CONFIG.CONTACT_PHONE.replace(/[^\d+]/g, "");
   tel.textContent = CONFIG.CONTACT_PHONE;
+  $("#waFab").href = $("#waFab").dataset.h = "https://wa.me/" + CONFIG.CONTACT_PHONE.replace(/\D/g, "");
+  $("#waFab").hidden = false;
   $("#waLink").href = "https://wa.me/" + CONFIG.CONTACT_PHONE.replace(/\D/g, "");
   $("#phoneRow").hidden = false;
 }
@@ -107,3 +109,13 @@ form.addEventListener("submit", async (e) => {
     btn.disabled = false; btn.textContent = "Send request";
   }
 });
+
+// highlight the nav link of the section in view
+{
+  const map = new Map([...links.querySelectorAll("a")].map((a) => [a.getAttribute("href").slice(1), a]));
+  const io = new IntersectionObserver((es) => es.forEach((e) => {
+    const a = map.get(e.target.id);
+    if (a && e.isIntersecting) { map.forEach((x) => x.classList.remove("active")); a.classList.add("active"); }
+  }), { rootMargin: "-40% 0px -55% 0px" });
+  map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+}

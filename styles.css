@@ -54,7 +54,7 @@ h4{font-size:1.2rem;margin-bottom:8px}
 .hero-points{list-style:none;padding:0;margin-top:32px;display:flex;gap:10px 22px;flex-wrap:wrap;font-family:var(--mono);font-size:.875rem;color:var(--muted)}
 .hero-points li::before{content:"✓ ";color:var(--green)}
 .hero-art{position:relative;padding-bottom:40px}
-.dash{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.25);overflow:hidden}
+.dash{margin-right:110px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.25);overflow:hidden}
 .dash-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--alt)}
 .dash-bar b{width:9px;height:9px;border-radius:50%;background:var(--line)}
 .dash-bar span{font-family:var(--mono);font-size:.75rem;color:var(--muted);margin-left:8px}
@@ -293,3 +293,21 @@ body{overflow-x:clip}
   .strip strong{font-size:1.6rem}
   .tab .txt strong{font-size:1.05rem}
 }
+
+/* ---------- polish ---------- */
+.nav-links a.active{color:var(--ink);box-shadow:inset 0 -2px 0 var(--green)}
+@media (max-width:860px){.nav-links a.active{color:var(--green);box-shadow:none}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:6px}
+.btn:active{transform:translateY(1px)}
+.card,.btn,.btn-ghost{transition:.15s}
+.card:hover{border-color:var(--green)}
+summary{padding:2px 0}
+summary:hover{color:var(--green)}
+.wa-fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;align-items:center;gap:8px;background:#25d366;color:#06361a;font:600 .95rem var(--sans);text-decoration:none;padding:12px 18px;border-radius:99px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);transition:.2s}
+.wa-fab:hover{background:#1ebe5a}
+.wa-fab svg{width:20px;height:20px;fill:currentColor}
+.wa-fab[hidden]{display:none}
+@media (max-width:720px){.wa-fab span{display:none}.wa-fab{padding:14px;right:14px;bottom:14px}.wa-fab svg{width:24px;height:24px}}
+@media (max-width:1100px){.dash{margin-right:90px}}
+@media (max-width:980px){.dash{margin-right:0}}
+@media (max-width:720px){.dash{margin-right:0}}
