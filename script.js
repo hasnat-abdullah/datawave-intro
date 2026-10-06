@@ -7,7 +7,7 @@ const CONFIG = {
   FORM_ENDPOINT: "",                 // e.g. "https://formspree.io/f/xxxxxxxx"
   WEB3FORMS_KEY: "541f2bc3-538b-4c65-b6ef-3e4688da324a",                 // alternative: access key from web3forms.com (uses its endpoint)
   CONTACT_PHONE: "+8801710608387",                 // e.g. "+8801XXXXXXXXX" — shown in the contact section and footer when set
-  CONTACT_EMAIL: "abdullah.2010bd@gmail.com",
+  CONTACT_EMAIL: "hello@datawavebd.com",
 };
 
 const $ = (s) => document.querySelector(s);
