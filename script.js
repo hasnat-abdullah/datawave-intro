@@ -55,6 +55,7 @@ if (CONFIG.CONTACT_PHONE) {
   const tel = $("#phoneLink");
   tel.href = "tel:" + CONFIG.CONTACT_PHONE.replace(/[^\d+]/g, "");
   tel.textContent = CONFIG.CONTACT_PHONE;
+  $("#waLink").href = "https://wa.me/" + CONFIG.CONTACT_PHONE.replace(/\D/g, "");
   $("#phoneRow").hidden = false;
 }
 $("#yr").textContent = new Date().getFullYear();
