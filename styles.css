@@ -311,3 +311,17 @@ summary:hover{color:var(--green)}
 @media (max-width:1100px){.dash{margin-right:90px}}
 @media (max-width:980px){.dash{margin-right:0}}
 @media (max-width:720px){.dash{margin-right:0}}
+
+/* ---------- packages ---------- */
+.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;align-items:stretch}
+.pkg{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+.pkg.featured{border:2px solid var(--green);box-shadow:0 30px 60px -40px rgba(10,125,59,.5)}
+.pkg-badge{position:absolute;top:-13px;left:24px;background:var(--green);color:#fff;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:99px}
+.pkg h3{margin-bottom:8px}
+.pkg-d{color:var(--muted);font-size:1rem;min-height:3.2em}
+.pkg-price{font-family:var(--serif);font-weight:600;font-size:1.35rem;margin:18px 0;padding:16px 0;border-block:1px solid var(--line);color:var(--green)}
+.pkg .ticks{flex:1;align-content:start;margin-bottom:24px}
+.pkg .ticks li{font-size:1rem}
+.pkg-note{font-size:.9rem;color:var(--muted);margin:-8px 0 20px}
+@media (max-width:980px){.pkgs{grid-template-columns:1fr;max-width:560px}.pkg-d{min-height:0}}
+.pkg .btn{text-align:center}

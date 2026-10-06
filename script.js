@@ -119,3 +119,10 @@ form.addEventListener("submit", async (e) => {
   }), { rootMargin: "-40% 0px -55% 0px" });
   map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
 }
+
+// package buttons: preselect "Get a proposal" and note which package was asked about
+document.querySelectorAll("[data-pkg]").forEach((b) => b.addEventListener("click", () => {
+  const sel = document.querySelector('#leadForm [name="interest"]'), msg = document.querySelector('#leadForm textarea');
+  if (sel) sel.value = "Get a proposal";
+  if (msg && !msg.value.trim()) msg.value = `I'd like to know more about the ${b.dataset.pkg} package.`;
+}));
