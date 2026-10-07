@@ -16,4 +16,4 @@ Edit `CONFIG` at the top of `script.js`:
 2. Domain: at your DNS provider add `A` records for `@` → 185.199.108.153, .109.153, .110.153, .111.153 and a `CNAME` for `www` → `hasnat-abdullah.github.io`.
 3. In Pages settings enable "Enforce HTTPS" once the certificate is issued.
 
-Preview locally: `python3 -m http.server 8000`
+Preview local machine: `python3 -m http.server 8000`
