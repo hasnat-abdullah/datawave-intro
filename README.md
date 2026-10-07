@@ -4,6 +4,7 @@ Static site for https://datawavebd.com (no build step; hosted on GitHub Pages).
 
 - `index.html`, `styles.css`, `script.js` — the whole site
 - `CNAME` — custom domain
+- `robots.txt`, `sitemap.xml`, `llms.txt`, `site.webmanifest` — SEO / AI-crawler files (update `lastmod` in the sitemap and `dateModified` in the JSON-LD when content changes)
 
 ## Lead form
 Edit `CONFIG` at the top of `script.js`:

@@ -1,0 +1,35 @@
+# DataWave
+
+> DataWave is a survey and field-data collection platform that organisations buy once and run on their own servers. It covers the whole survey lifecycle: form builder, offline Android and iOS data-collection apps, live monitoring with suspicious-data detection, analysis and export, and optional AI assistance. English and Bangla are supported throughout. Website: https://datawavebd.com/
+
+## Key facts
+- Deployment: installed on the customer's own infrastructure; data stays in the customer's country and under their control.
+- Licensing: one-time purchase, no recurring licence. Unlimited projects, users/surveyors and submissions in every package. Hosting, taxes and field devices are the customer's responsibility.
+- Apps: native Android and iOS, fully offline, automatic background sync; GPS, photo, audio and signature capture.
+- Forms: drag-and-drop builder, 20+ question types, skip logic, validation, calculations, import from Word/Excel, English and Bangla in one form.
+- Monitoring: live map, surveyor tracking, review and approve workflow, suspicious-submission detection (duplicate GPS, impossible travel, rushed completion, copied answers).
+- Analysis and export: dashboards by day, area and surveyor; CSV, Excel and Stata export; Stata import; scheduled and one-click reports.
+- AI (billed at cost on actual usage, with a usage monitor and monthly spending caps): form creation from a prompt or document, English-Bangla translation, per-submission summaries, audio validation, report generation.
+- Branding: customer's own name and logo on the web dashboard and mobile apps.
+- Audience: NGOs and development agencies, research institutes, government programmes, microfinance and livelihoods, market research firms, monitoring and evaluation teams.
+
+## Packages (pricing is quoted on request; no public prices)
+- Base: complete collection platform, 3 months of support and bug fixes, deployment and onboarding training.
+- Pro: Base plus AI form creation/translation, AI submission summaries, surveyor tracking and notifications, formula calculations, Stata export/import, training workshops.
+- Pro + Customization: Pro plus custom features, analysis across recurring survey rounds, AI audio validation and AI report generation. Scoped after a requirements workshop.
+
+## Services
+Deployment, training, customization, and support (online and phone), delivered as Discover, Deploy, Train, Run.
+
+## Pages
+- [Home — full product overview, packages, FAQ and contact form](https://datawavebd.com/)
+- [Platform](https://datawavebd.com/#platform)
+- [AI features](https://datawavebd.com/#ai)
+- [Why DataWave vs hosted survey tools](https://datawavebd.com/#ownership)
+- [Packages](https://datawavebd.com/#packages)
+- [Services](https://datawavebd.com/#services)
+- [FAQ](https://datawavebd.com/#faq)
+
+## Contact
+- Email: hello@datawavebd.com
+- Request a demo: https://datawavebd.com/#contact (replies within one working day)

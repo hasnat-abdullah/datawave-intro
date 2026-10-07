@@ -72,6 +72,7 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(form));
   if (data._gotcha) return; // bot
+  for (const k in data) if (typeof data[k] === "string") data[k] = data[k].trim().slice(0, k === "message" ? 2000 : 150);
 
   let valid = true;
   for (const f of ["name", "email", "organisation"]) {
